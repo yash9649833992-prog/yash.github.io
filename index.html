@@ -7,6 +7,7 @@
 <meta name="description" content="Yash Shrivastava is a Business Analyst in Jaipur with about five years of experience turning business needs into clear, buildable requirements.">
 <meta property="og:title" content="Yash Shrivastava · Business Analyst">
 <meta property="og:description" content="Business Analyst, Jaipur. Requirements, BRDs, user stories, UAT and stakeholder communication.">
+<meta property="og:image" content="assets/img/yash.jpg">
 <meta property="og:type" content="website">
 <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -15,9 +16,9 @@
 <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
+<div class="progress" id="progress" aria-hidden="true"></div>
+<div class="mesh" aria-hidden="true"><i class="m1"></i><i class="m2"></i><i class="m3"></i></div>
 <div class="bg-grid" aria-hidden="true"></div>
-<div class="glow glow-1" aria-hidden="true"></div>
-<div class="glow glow-2" aria-hidden="true"></div>
 <div class="cursor-glow" id="cursorGlow" aria-hidden="true"></div>
 
 <header class="nav" id="nav">
@@ -34,7 +35,7 @@
       <svg class="sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>
       <svg class="moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg>
     </button>
-    <a class="btn btn-sm" href="assets/files/Yash_Shrivastava_Resume.pdf" download>Resume</a>
+    <a class="btn btn-primary btn-sm" href="assets/files/Yash_Shrivastava_Resume.pdf" download="Yash_Shrivastava_Resume.pdf">📄 Resume</a>
     <button class="icon-btn menu-btn" id="menuBtn" aria-label="Menu"><span></span><span></span><span></span></button>
   </div>
 </header>
@@ -43,81 +44,124 @@
   <!-- HERO -->
   <section class="hero container">
     <div class="hero-text reveal">
-      <p class="eyebrow"><span class="dot"></span> Available for Business Analyst roles</p>
-      <h1>Hi, I'm <span class="grad">Yash Shrivastava</span>.<br>I turn business needs into <span class="type" id="typed"></span><span class="caret">|</span></h1>
-      <p class="lead">Business Analyst with about five years of experience working with software and digital teams in Jaipur. I write requirements that developers can build from, and I stay involved until the work is tested and delivered.</p>
+      <p class="eyebrow"><span class="wave">👋</span> Hello, I'm</p>
+      <h1 class="name">Yash<br><span class="grad">Shrivastava</span></h1>
+      <p class="role">Business Analyst who turns needs into <span class="type" id="typed"></span><span class="caret">|</span></p>
+      <p class="lead">About five years with software and digital teams in Jaipur. I write requirements developers can build from, keep clients and tech teams on the same page, and stay involved until the work is tested and delivered.</p>
       <div class="hero-cta">
-        <a href="#contact" class="btn btn-primary">Let's talk</a>
-        <a href="assets/files/Yash_Shrivastava_Resume.pdf" class="btn btn-ghost" download>
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4M7 10l5 5 5-5M12 15V3"/></svg>
+        <a href="assets/files/Yash_Shrivastava_Resume.pdf" class="btn btn-primary btn-lg" download="Yash_Shrivastava_Resume.pdf">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4M7 10l5 5 5-5M12 15V3"/></svg>
           Download resume
         </a>
+        <a href="#contact" class="btn btn-ghost btn-lg">💬 Let's talk</a>
       </div>
       <div class="hero-meta">
-        <a href="https://www.linkedin.com/in/yash-shrivastava-2aa1141a4" target="_blank" rel="noopener">LinkedIn</a>
-        <span>·</span>
-        <a href="mailto:yash9649833992@gmail.com">yash9649833992@gmail.com</a>
-        <span>·</span>
-        <span>Jaipur, Rajasthan</span>
+        <a href="https://www.linkedin.com/in/yash-shrivastava-2aa1141a4" target="_blank" rel="noopener">🔗 LinkedIn</a>
+        <a href="mailto:yash9649833992@gmail.com">✉️ yash9649833992@gmail.com</a>
+        <span>📍 Jaipur, Rajasthan</span>
       </div>
     </div>
-    <div class="hero-card reveal" style="--d:.15s">
-      <div class="card glass profile-card tilt" id="tilt">
-        <div class="avatar"><span>YS</span><i class="ring"></i></div>
-        <h3>Yash Shrivastava</h3>
-        <p class="muted">Business Analyst · MBA</p>
-        <div class="stats">
-          <div><b data-count="5">0</b><span>Years</span></div>
-          <div><b data-count="3">0</b><span>Companies</span></div>
-          <div><b data-count="12">0</b><span>Core skills</span></div>
-        </div>
-        <div class="chips">
-          <span>BRD</span><span>User Stories</span><span>UAT</span><span>Gap Analysis</span>
-        </div>
+
+    <div class="hero-visual reveal" style="--d:.15s">
+      <div class="photo-wrap" id="tilt">
+        <div class="blob-ring"></div>
+        <div class="photo"><img src="assets/img/yash.jpg" alt="Yash Shrivastava"></div>
+        <div class="sticker s1">📝 BRD &amp; User Stories</div>
+        <div class="sticker s2">📊 Gap Analysis</div>
+        <div class="sticker s3">✅ UAT</div>
+        <div class="sticker s4">🎓 MBA</div>
+        <div class="sticker s5">🤝 Stakeholders</div>
       </div>
+    </div>
+  </section>
+
+  <!-- STATS -->
+  <section class="container">
+    <div class="stats reveal">
+      <div class="stat"><span class="stat-emoji">⏳</span><b><span data-count="5">0</span>+</b><span>Years of experience</span></div>
+      <div class="stat"><span class="stat-emoji">🏢</span><b><span data-count="3">0</span></b><span>Companies in Jaipur</span></div>
+      <div class="stat"><span class="stat-emoji">🧰</span><b><span data-count="12">0</span></b><span>Core BA skills</span></div>
+      <div class="stat"><span class="stat-emoji">🎓</span><b><span data-count="2">0</span></b><span>Degrees · MBA + B.Tech</span></div>
     </div>
   </section>
 
   <!-- MARQUEE -->
   <div class="marquee" aria-hidden="true">
     <div class="track">
-      <span>Requirement Gathering</span><span>Business Requirement Documents</span><span>Functional Specifications</span><span>User Stories</span><span>Process Mapping</span><span>Gap Analysis</span><span>Performance Analysis</span><span>Stakeholder Communication</span><span>UAT</span><span>Project Coordination</span><span>Documentation</span><span>Problem Solving</span>
-      <span>Requirement Gathering</span><span>Business Requirement Documents</span><span>Functional Specifications</span><span>User Stories</span><span>Process Mapping</span><span>Gap Analysis</span><span>Performance Analysis</span><span>Stakeholder Communication</span><span>UAT</span><span>Project Coordination</span><span>Documentation</span><span>Problem Solving</span>
+      <span>📝 Requirement Gathering</span><span>📄 Business Requirement Documents</span><span>🧩 Functional Specifications</span><span>📖 User Stories</span><span>🗺️ Process Mapping</span><span>🔍 Gap Analysis</span><span>📈 Performance Analysis</span><span>🤝 Stakeholder Communication</span><span>✅ UAT</span><span>🗂️ Project Coordination</span><span>📚 Documentation</span><span>💡 Problem Solving</span>
+      <span>📝 Requirement Gathering</span><span>📄 Business Requirement Documents</span><span>🧩 Functional Specifications</span><span>📖 User Stories</span><span>🗺️ Process Mapping</span><span>🔍 Gap Analysis</span><span>📈 Performance Analysis</span><span>🤝 Stakeholder Communication</span><span>✅ UAT</span><span>🗂️ Project Coordination</span><span>📚 Documentation</span><span>💡 Problem Solving</span>
     </div>
   </div>
 
-  <!-- ABOUT -->
+  <!-- ABOUT (bento) -->
   <section id="about" class="section container">
     <div class="section-head reveal">
       <span class="label">01 — About</span>
-      <h2>Clear requirements. <span class="grad">Delivered work.</span></h2>
+      <h2>Clear requirements. <span class="grad">Delivered work.</span> 🚀</h2>
     </div>
-    <div class="about-grid">
-      <div class="about-text reveal">
+    <div class="bento">
+      <div class="card b-about reveal">
+        <div class="card-emoji">🙋‍♂️</div>
+        <h3>A little about me</h3>
         <p>I'm a Business Analyst based in Jaipur. For about five years I have worked with software and digital teams, meeting stakeholders, understanding what the business actually needs, and writing it down as requirements that developers and testers can use directly.</p>
         <p>I am comfortable talking with clients, writing simple and accurate documents, and reading performance data to spot what needs to improve. I hold an MBA from Rajasthan Technical University, which strengthens the business and management side of my analysis work.</p>
       </div>
-      <div class="about-cards">
-        <div class="card glass mini reveal" style="--d:.05s">
-          <div class="mini-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6M16 13H8M16 17H8M10 9H8"/></svg></div>
-          <h4>Requirements that build</h4>
-          <p>BRDs, functional specs and user stories written so that developers never have to guess.</p>
+
+      <div class="card b-donut reveal" style="--d:.05s">
+        <h4>🍩 A typical week</h4>
+        <div class="donut-wrap">
+          <svg class="donut" viewBox="0 0 120 120">
+            <circle class="track-c" cx="60" cy="60" r="46"/>
+            <circle class="seg" cx="60" cy="60" r="46" style="--v:35;--o:0;--c:var(--p1)"/>
+            <circle class="seg" cx="60" cy="60" r="46" style="--v:25;--o:35;--c:var(--p2)"/>
+            <circle class="seg" cx="60" cy="60" r="46" style="--v:20;--o:60;--c:var(--p3)"/>
+            <circle class="seg" cx="60" cy="60" r="46" style="--v:20;--o:80;--c:var(--p4)"/>
+            <text x="60" y="57" class="donut-big">100%</text>
+            <text x="60" y="72" class="donut-small">focus</text>
+          </svg>
+          <ul class="legend">
+            <li><i style="background:var(--p1)"></i>📝 Requirements &amp; docs <b>35%</b></li>
+            <li><i style="background:var(--p2)"></i>🤝 Stakeholder meetings <b>25%</b></li>
+            <li><i style="background:var(--p3)"></i>📈 Data &amp; process analysis <b>20%</b></li>
+            <li><i style="background:var(--p4)"></i>✅ UAT &amp; delivery <b>20%</b></li>
+          </ul>
         </div>
-        <div class="card glass mini reveal" style="--d:.1s">
-          <div class="mini-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.5.5l3-3a5 5 0 0 0-7-7l-1.5 1.5"/><path d="M14 11a5 5 0 0 0-7.5-.5l-3 3a5 5 0 0 0 7 7l1.5-1.5"/></svg></div>
-          <h4>Bridge between teams</h4>
-          <p>The link between clients and the technical team, so changes and feedback are understood by both sides.</p>
+      </div>
+
+      <div class="card b-loc reveal" style="--d:.1s">
+        <div class="map">
+          <svg viewBox="0 0 200 120" aria-hidden="true">
+            <defs><pattern id="dots" width="10" height="10" patternUnits="userSpaceOnUse"><circle cx="2" cy="2" r="1.2" fill="currentColor" opacity=".25"/></pattern></defs>
+            <rect width="200" height="120" fill="url(#dots)"/>
+            <path d="M20 90 C60 70 70 40 110 50 S170 30 185 60" fill="none" stroke="var(--p2)" stroke-width="2" stroke-dasharray="4 4" opacity=".7"/>
+            <circle cx="110" cy="50" r="14" fill="var(--p1)" opacity=".18"><animate attributeName="r" values="10;22;10" dur="3s" repeatCount="indefinite"/><animate attributeName="opacity" values=".3;0;.3" dur="3s" repeatCount="indefinite"/></circle>
+            <circle cx="110" cy="50" r="5" fill="var(--p1)"/>
+          </svg>
         </div>
-        <div class="card glass mini reveal" style="--d:.15s">
-          <div class="mini-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3v18h18"/><path d="m7 15 4-4 3 3 6-6"/><path d="M17 8h3v3"/></svg></div>
-          <h4>Data-led improvements</h4>
-          <p>Studying performance data and current processes to find gaps and suggest practical fixes.</p>
+        <div class="loc-text"><span class="card-emoji">📍</span><h4>Jaipur, Rajasthan</h4><p>India · open to remote &amp; on-site</p></div>
+      </div>
+
+      <div class="card b-steps reveal" style="--d:.15s">
+        <h4>⚙️ How I work</h4>
+        <ol class="steps">
+          <li><span>🎯</span><div><b>Discover</b><small>Meet stakeholders, understand the real need.</small></div></li>
+          <li><span>✍️</span><div><b>Define</b><small>BRDs, specs, user stories and process flows.</small></div></li>
+          <li><span>🔁</span><div><b>Align</b><small>Daily with delivery team, answer questions, keep scope clear.</small></div></li>
+          <li><span>✅</span><div><b>Verify</b><small>UAT until the solution matches what was asked.</small></div></li>
+        </ol>
+      </div>
+
+      <div class="card b-tools reveal" style="--d:.2s">
+        <h4>🧰 Toolkit</h4>
+        <div class="chips">
+          <span>📝 BRD</span><span>🧩 FSD</span><span>📖 User Stories</span><span>🗺️ Process Mapping</span><span>🔍 Gap Analysis</span><span>📈 Performance</span><span>🤝 Stakeholders</span><span>✅ UAT</span><span>🗂️ Coordination</span><span>📚 Documentation</span><span>💡 Problem Solving</span><span>📊 Reports</span>
         </div>
-        <div class="card glass mini reveal" style="--d:.2s">
-          <div class="mini-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.1V12a10 10 0 1 1-5.9-9.1"/><path d="m9 11 3 3L22 4"/></svg></div>
-          <h4>Tested and delivered</h4>
-          <p>Involved through UAT to confirm the final solution matches what the client asked for.</p>
-        </div>
+      </div>
+
+      <div class="card b-mba reveal" style="--d:.25s">
+        <div class="card-emoji big">🎓</div>
+        <h4>MBA · Completed</h4>
+        <p>Rajasthan Technical University, Kota<br>2021 – 2023</p>
       </div>
     </div>
   </section>
@@ -126,18 +170,38 @@
   <section id="experience" class="section container">
     <div class="section-head reveal">
       <span class="label">02 — Experience</span>
-      <h2>Where I've <span class="grad">worked.</span></h2>
+      <h2>Where I've <span class="grad">worked.</span> 💼</h2>
     </div>
+
+    <div class="journey card reveal">
+      <div class="journey-head"><h4>📈 Growth journey</h4><span class="muted">2020 → today</span></div>
+      <div class="journey-plot">
+      <svg class="journey-svg" viewBox="0 0 800 144" preserveAspectRatio="none" aria-hidden="true">
+        <defs>
+          <linearGradient id="jg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="var(--p1)" stop-opacity=".45"/><stop offset="1" stop-color="var(--p1)" stop-opacity="0"/></linearGradient>
+          <linearGradient id="jl" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="var(--p1)"/><stop offset="1" stop-color="var(--p2)"/></linearGradient>
+        </defs>
+        <g stroke="currentColor" opacity=".08"><line x1="0" y1="36" x2="800" y2="36"/><line x1="0" y1="72" x2="800" y2="72"/><line x1="0" y1="108" x2="800" y2="108"/></g>
+        <path class="area" d="M40 118 C160 111 200 98 300 79 S460 59 560 39 S720 20 760 14 L760 131 L40 131 Z" fill="url(#jg)"/>
+        <path class="line" d="M40 118 C160 111 200 98 300 79 S460 59 560 39 S720 20 760 14" fill="none" stroke="url(#jl)" stroke-width="4" stroke-linecap="round" vector-effect="non-scaling-stroke"/>
+      </svg>
+      <span class="jpt" style="--x:5%;--y:82%"></span><span class="jpt" style="--x:37.5%;--y:55%"></span><span class="jpt" style="--x:70%;--y:27%"></span><span class="jpt" style="--x:95%;--y:10%"></span>
+      </div>
+      <div class="journey-labels">
+        <div style="--x:5%"><b>🌱 2020</b><span>Optisoft</span></div>
+        <div style="--x:37.5%"><b>🎓 2023</b><span>MBA done</span></div>
+        <div style="--x:70%"><b>🏢 2023</b><span>WDP Tech</span></div>
+        <div style="--x:95%"><b>🚀 2025</b><span>Smart SEO Tech</span></div>
+      </div>
+    </div>
+
     <div class="timeline">
       <article class="tl-item reveal">
-        <div class="tl-dot"></div>
-        <div class="card glass">
+        <div class="tl-dot">🚀</div>
+        <div class="card">
           <div class="tl-top">
-            <div>
-              <h3>Business Analyst</h3>
-              <p class="muted">Smart SEO Tech · Jaipur, Rajasthan</p>
-            </div>
-            <span class="badge badge-live">Aug 2025 – Present</span>
+            <div class="co"><span class="logo" style="--c1:#7c6cff;--c2:#22d3ee">SS</span><div><h3>Business Analyst</h3><p class="muted">Smart SEO Tech · Jaipur, Rajasthan</p></div></div>
+            <span class="badge badge-live">● Aug 2025 – Present</span>
           </div>
           <ul>
             <li>Meet with stakeholders to understand what the business needs and write it down as clear, easy-to-follow requirements.</li>
@@ -148,13 +212,10 @@
         </div>
       </article>
       <article class="tl-item reveal">
-        <div class="tl-dot"></div>
-        <div class="card glass">
+        <div class="tl-dot">🏢</div>
+        <div class="card">
           <div class="tl-top">
-            <div>
-              <h3>Business Analyst</h3>
-              <p class="muted">WDP Technologies Pvt. Ltd. · Jaipur, Rajasthan</p>
-            </div>
+            <div class="co"><span class="logo" style="--c1:#f472b6;--c2:#fbbf24">W</span><div><h3>Business Analyst</h3><p class="muted">WDP Technologies Pvt. Ltd. · Jaipur, Rajasthan</p></div></div>
             <span class="badge">Nov 2023 – Jun 2025</span>
           </div>
           <ul>
@@ -166,13 +227,10 @@
         </div>
       </article>
       <article class="tl-item reveal">
-        <div class="tl-dot"></div>
-        <div class="card glass">
+        <div class="tl-dot">🌱</div>
+        <div class="card">
           <div class="tl-top">
-            <div>
-              <h3>Business Analyst</h3>
-              <p class="muted">Optisoft Business Solutions Pvt. Ltd. · Jaipur, Rajasthan</p>
-            </div>
+            <div class="co"><span class="logo" style="--c1:#34d399;--c2:#22d3ee">O</span><div><h3>Business Analyst</h3><p class="muted">Optisoft Business Solutions Pvt. Ltd. · Jaipur, Rajasthan</p></div></div>
             <span class="badge">Aug 2020 – Nov 2022</span>
           </div>
           <ul>
@@ -190,34 +248,41 @@
   <section id="skills" class="section container">
     <div class="section-head reveal">
       <span class="label">03 — Skills</span>
-      <h2>What I <span class="grad">bring.</span></h2>
+      <h2>What I <span class="grad">bring.</span> 🧠</h2>
     </div>
-    <div class="skills-grid">
-      <div class="card glass reveal">
-        <h4>Analysis &amp; Documentation</h4>
-        <div class="bars">
-          <div class="bar"><span>Requirement Gathering</span><i style="--w:95%"></i></div>
-          <div class="bar"><span>Business Requirement Documents (BRD)</span><i style="--w:92%"></i></div>
-          <div class="bar"><span>Functional Specifications</span><i style="--w:90%"></i></div>
-          <div class="bar"><span>User Stories</span><i style="--w:92%"></i></div>
-          <div class="bar"><span>Documentation</span><i style="--w:94%"></i></div>
-        </div>
+    <div class="skills-layout">
+      <div class="card radar-card reveal">
+        <h4>🕸️ Skill radar</h4>
+        <svg class="radar" id="radar" viewBox="0 0 400 320" aria-hidden="true"></svg>
+        <p class="muted small">Self-assessed strength across the six areas I use every day.</p>
       </div>
-      <div class="card glass reveal" style="--d:.1s">
-        <h4>Process &amp; Performance</h4>
-        <div class="bars">
-          <div class="bar"><span>Process Mapping</span><i style="--w:88%"></i></div>
-          <div class="bar"><span>Gap Analysis</span><i style="--w:88%"></i></div>
-          <div class="bar"><span>Performance Analysis</span><i style="--w:86%"></i></div>
-          <div class="bar"><span>Problem Solving</span><i style="--w:90%"></i></div>
+      <div class="skill-cols">
+        <div class="card reveal" style="--d:.05s">
+          <h4>📝 Analysis &amp; Documentation</h4>
+          <div class="bars">
+            <div class="bar"><span>📋 Requirement Gathering</span><i style="--w:95%"></i></div>
+            <div class="bar"><span>📄 Business Requirement Documents (BRD)</span><i style="--w:92%"></i></div>
+            <div class="bar"><span>🧩 Functional Specifications</span><i style="--w:90%"></i></div>
+            <div class="bar"><span>📖 User Stories</span><i style="--w:92%"></i></div>
+            <div class="bar"><span>📚 Documentation</span><i style="--w:94%"></i></div>
+          </div>
         </div>
-      </div>
-      <div class="card glass reveal" style="--d:.2s">
-        <h4>Delivery &amp; People</h4>
-        <div class="bars">
-          <div class="bar"><span>Stakeholder Communication</span><i style="--w:93%"></i></div>
-          <div class="bar"><span>User Acceptance Testing (UAT)</span><i style="--w:88%"></i></div>
-          <div class="bar"><span>Project Coordination</span><i style="--w:87%"></i></div>
+        <div class="card reveal" style="--d:.1s">
+          <h4>🔍 Process &amp; Performance</h4>
+          <div class="bars">
+            <div class="bar"><span>🗺️ Process Mapping</span><i style="--w:88%"></i></div>
+            <div class="bar"><span>🔎 Gap Analysis</span><i style="--w:88%"></i></div>
+            <div class="bar"><span>📈 Performance Analysis</span><i style="--w:86%"></i></div>
+            <div class="bar"><span>💡 Problem Solving</span><i style="--w:90%"></i></div>
+          </div>
+        </div>
+        <div class="card reveal" style="--d:.15s">
+          <h4>🤝 Delivery &amp; People</h4>
+          <div class="bars">
+            <div class="bar"><span>🗣️ Stakeholder Communication</span><i style="--w:93%"></i></div>
+            <div class="bar"><span>✅ User Acceptance Testing (UAT)</span><i style="--w:88%"></i></div>
+            <div class="bar"><span>🗂️ Project Coordination</span><i style="--w:87%"></i></div>
+          </div>
         </div>
       </div>
     </div>
@@ -227,19 +292,19 @@
   <section id="education" class="section container">
     <div class="section-head reveal">
       <span class="label">04 — Education</span>
-      <h2>Where I <span class="grad">studied.</span></h2>
+      <h2>Where I <span class="grad">studied.</span> 📚</h2>
     </div>
     <div class="edu-grid">
-      <div class="card glass edu reveal">
-        <div class="edu-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M22 10 12 5 2 10l10 5 10-5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg></div>
+      <div class="card edu reveal">
+        <div class="edu-emoji">🎓</div>
         <div>
           <h3>Master of Business Administration (MBA)</h3>
           <p class="muted">Rajasthan Technical University, Kota</p>
-          <span class="badge">Oct 2021 – 2023 · Completed</span>
+          <span class="badge badge-live">✔ Oct 2021 – 2023 · Completed</span>
         </div>
       </div>
-      <div class="card glass edu reveal" style="--d:.1s">
-        <div class="edu-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg></div>
+      <div class="card edu reveal" style="--d:.1s">
+        <div class="edu-emoji">🛠️</div>
         <div>
           <h3>Bachelor of Technology (B.Tech)</h3>
           <p class="muted">Rajasthan Technical University, Kota</p>
@@ -251,25 +316,18 @@
 
   <!-- CONTACT -->
   <section id="contact" class="section container">
-    <div class="card glass contact reveal">
+    <div class="card contact reveal">
       <div class="contact-text">
         <span class="label">05 — Contact</span>
-        <h2>Have a project that needs <span class="grad">clear requirements?</span></h2>
+        <h2>Have a project that needs <span class="grad">clear requirements?</span> 💬</h2>
         <p class="muted">I'm open to Business Analyst roles and freelance analysis work. Drop a message and I'll reply within a day.</p>
+        <a href="assets/files/Yash_Shrivastava_Resume.pdf" class="btn btn-primary" download="Yash_Shrivastava_Resume.pdf">📄 Download my resume</a>
       </div>
       <div class="contact-links">
-        <a class="contact-row" href="mailto:yash9649833992@gmail.com">
-          <span class="ci"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 7L2 7"/></svg></span><div><small>Email</small><b>yash9649833992@gmail.com</b></div>
-        </a>
-        <a class="contact-row" href="tel:+919649833992">
-          <span class="ci"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></svg></span><div><small>Phone</small><b>+91 96498 33992</b></div>
-        </a>
-        <a class="contact-row" href="https://www.linkedin.com/in/yash-shrivastava-2aa1141a4" target="_blank" rel="noopener">
-          <span class="ci">in</span><div><small>LinkedIn</small><b>yash-shrivastava-2aa1141a4</b></div>
-        </a>
-        <div class="contact-row">
-          <span class="ci"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0z"/><circle cx="12" cy="10" r="3"/></svg></span><div><small>Location</small><b>Jaipur, Rajasthan, India</b></div>
-        </div>
+        <a class="contact-row" href="mailto:yash9649833992@gmail.com"><span class="ci">✉️</span><div><small>Email</small><b>yash9649833992@gmail.com</b></div></a>
+        <a class="contact-row" href="tel:+919649833992"><span class="ci">📞</span><div><small>Phone</small><b>+91 96498 33992</b></div></a>
+        <a class="contact-row" href="https://www.linkedin.com/in/yash-shrivastava-2aa1141a4" target="_blank" rel="noopener"><span class="ci">💼</span><div><small>LinkedIn</small><b>yash-shrivastava-2aa1141a4</b></div></a>
+        <div class="contact-row"><span class="ci">📍</span><div><small>Location</small><b>Jaipur, Rajasthan, India</b></div></div>
       </div>
     </div>
   </section>
@@ -277,10 +335,11 @@
 
 <footer class="footer container">
   <span>© <span id="year"></span> Yash Shrivastava</span>
-  <span class="muted">Business Analyst · Jaipur</span>
+  <span class="muted">Made with ☕ in Jaipur</span>
   <a href="#top" class="to-top">Back to top ↑</a>
 </footer>
 
+<script src="https://cdn.jsdelivr.net/npm/@twemoji/api@15.1.0/dist/twemoji.min.js" crossorigin="anonymous"></script>
 <script src="assets/js/main.js"></script>
 </body>
 </html>
