@@ -1,0 +1,115 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>yash.analyst — overview</title><meta name="description" content="Yash Shrivastava, Business Analyst in Jaipur. I turn business needs into clear requirements that developers can build from, and I stay involved until the work is tested and delivered."><link rel="icon" href="../../assets/favicon.svg" type="image/svg+xml"><link rel="icon" type="image/png" sizes="32x32" href="../../assets/favicon-32.png"><link rel="apple-touch-icon" sizes="180x180" href="../../assets/favicon-180.png"><meta name="theme-color" content="#1f2a24"><meta property="og:title" content="Yash Shrivastava · Business Analyst"><meta property="og:image" content="../../assets/img/yash.jpg"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet"><style>*{box-sizing:border-box;margin:0;padding:0}html{scroll-behavior:smooth}img.emoji{height:1.1em;width:1.1em;margin:0 .07em;vertical-align:-.2em;display:inline-block}ul,ol{list-style:none}a{color:inherit;text-decoration:none}.rv{opacity:0;transform:translateY(22px);transition:opacity .7s,transform .7s cubic-bezier(.2,.8,.2,1)}.rv.on{opacity:1;transform:none}@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}.rv{opacity:1;transform:none}}
+:root{--bg:#0b1020;--panel:#121a33;--panel2:#182247;--line:#243059;--text:#e6ebff;--mut:#8b96c2;--blue:#4f8cff;--green:#22c55e;--purple:#a78bfa;--amber:#f59e0b}
+body{font-family:'IBM Plex Sans',sans-serif;background:var(--bg);color:var(--text);line-height:1.55}
+.mono{font-family:'IBM Plex Mono',monospace}
+.app{display:grid;grid-template-columns:76px 1fr;min-height:100vh}
+.rail{background:#080c19;border-right:1px solid var(--line);display:flex;flex-direction:column;align-items:center;padding:16px 0;gap:8px;position:sticky;top:0;height:100vh}
+.rail .lg{width:40px;height:40px;border-radius:12px;background:linear-gradient(135deg,var(--blue),var(--purple));display:grid;place-items:center;font-weight:700;font-size:13px;margin-bottom:14px}
+.rail a{width:44px;height:44px;border-radius:12px;display:grid;place-items:center;font-size:19px;color:var(--mut);transition:.2s;position:relative}
+.rail a:hover{background:var(--panel2);color:#fff}
+.rail a span{position:absolute;left:54px;background:#000;padding:4px 8px;border-radius:6px;font-size:12px;white-space:nowrap;opacity:0;pointer-events:none;transition:.2s}
+.rail a:hover span{opacity:1}
+.rail .dl{margin-top:auto;background:var(--blue);color:#fff}
+.topbar{display:flex;align-items:center;gap:16px;padding:14px 26px;border-bottom:1px solid var(--line);background:rgba(11,16,32,.9);position:sticky;top:0;z-index:5;backdrop-filter:blur(8px)}
+.topbar .path{font-size:13px;color:var(--mut)}.topbar .path b{color:#fff;font-weight:600}
+.chip{display:inline-flex;align-items:center;gap:6px;padding:5px 10px;border-radius:999px;font-size:12px;border:1px solid var(--line);background:var(--panel)}
+.chip.ok{border-color:rgba(34,197,94,.4);color:var(--green)}
+.chip.ok:before{content:'';width:7px;height:7px;border-radius:50%;background:var(--green);box-shadow:0 0 8px var(--green)}
+.topbar .sp{flex:1}
+.btn{padding:8px 14px;border-radius:9px;font-size:13px;font-weight:600;border:1px solid var(--line);background:var(--panel);color:#fff;transition:.2s}
+.btn.p{background:var(--blue);border-color:var(--blue)}.btn:hover{filter:brightness(1.15)}
+.content{padding:24px 26px 60px;display:grid;grid-template-columns:repeat(12,1fr);gap:16px}
+.panel{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:18px 20px;transition:.2s}
+.panel:hover{border-color:#3b4a84}
+.ph{display:flex;justify-content:space-between;align-items:center;margin-bottom:14px}
+.ph h3{font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:var(--mut);font-weight:600}
+.ph .mono{font-size:11.5px;color:var(--mut)}
+.kpi{grid-column:span 3;display:flex;flex-direction:column;gap:4px}
+.kpi .v{font-size:34px;font-weight:700;line-height:1}
+.kpi .l{font-size:12.5px;color:var(--mut)}
+.kpi .e{font-size:22px;margin-left:auto}
+.kpi .tr{font-size:12px;color:var(--green)}
+.prof{grid-column:span 7;display:flex;gap:20px;align-items:flex-start}
+.prof>img{width:112px;height:112px;border-radius:14px;object-fit:cover;object-position:50% 20%;border:1px solid var(--line);flex:none}
+.prof h2{font-size:24px;font-weight:700;line-height:1.15}
+.prof .r{color:var(--blue);font-weight:600;font-size:13px;margin:2px 0 10px}
+.prof p{font-size:14px;color:#c3cbe9}
+.prof .tags{display:flex;gap:6px;flex-wrap:wrap;margin-top:12px}
+.prof .tags span{font-size:11.5px;padding:4px 9px;border-radius:6px;background:var(--panel2);border:1px solid var(--line)}
+.heat{grid-column:span 5}
+.hr{display:grid;grid-template-columns:44px repeat(12,1fr);gap:4px;align-items:center;margin-bottom:4px}
+.hr span{font-size:11.5px;color:var(--mut)}
+.hr i{aspect-ratio:1;border-radius:3px;background:#1a2447;display:block;position:relative}
+.hr i.g{background:var(--green)}.hr i.b{background:var(--blue)}.hr i.p{background:var(--purple)}
+.hr i.m:after{content:'';position:absolute;inset:0;border:2px solid var(--amber);border-radius:3px;opacity:.9}
+.lg{display:flex;gap:14px;flex-wrap:wrap;margin-top:12px;font-size:11.5px;color:var(--mut)}
+.lg i{display:inline-block;width:10px;height:10px;border-radius:2px;margin-right:5px;vertical-align:-1px}
+.exp{grid-column:span 12}
+table{width:100%;border-collapse:collapse;font-size:13.5px}
+th{text-align:left;font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--mut);padding:8px 10px;border-bottom:1px solid var(--line);font-weight:600}
+td{padding:14px 10px;border-bottom:1px solid var(--line);vertical-align:top}
+tr:last-child td{border:0}
+tr:hover td{background:rgba(79,140,255,.05)}
+td .mono{font-size:12px;color:var(--mut);white-space:nowrap}
+td b{font-weight:600}
+td .co{color:var(--mut);font-size:12.5px}
+td li{font-size:13px;color:#c3cbe9;margin-bottom:5px;padding-left:14px;position:relative}
+td li:before{content:'›';position:absolute;left:0;color:var(--blue)}
+.st{display:inline-block;padding:3px 8px;border-radius:6px;font-size:11px;font-weight:600}
+.st.live{background:rgba(34,197,94,.15);color:var(--green)}.st.done{background:rgba(139,150,194,.15);color:var(--mut)}
+.sk{grid-column:span 7}
+.sk .g{display:grid;grid-template-columns:1fr 1fr;gap:6px 24px}
+.bar{display:flex;align-items:center;gap:10px;font-size:13px;padding:6px 0}
+.bar i{flex:1;height:6px;background:#1a2447;border-radius:3px;overflow:hidden}
+.bar i:after{content:'';display:block;height:100%;width:var(--w);background:linear-gradient(90deg,var(--blue),var(--purple))}
+.bar b{width:34px;text-align:right;font-weight:500;color:var(--mut);font-size:12px}
+.donut{grid-column:span 5;display:flex;gap:18px;align-items:center}
+.donut svg{width:150px;height:150px;transform:rotate(-90deg);flex:none}
+.donut circle{fill:none;stroke-width:16}
+.donut ul{font-size:13px;display:grid;gap:8px}
+.donut ul i{display:inline-block;width:10px;height:10px;border-radius:2px;margin-right:8px;vertical-align:-1px}
+.donut ul b{float:right;font-weight:600}
+.edu{grid-column:span 6}
+.edu>div{display:flex;gap:12px;padding:12px 0;border-bottom:1px solid var(--line)}
+.edu>div:last-child{border:0}
+.edu .e{font-size:24px}.edu b{display:block;font-size:14.5px}.edu span{font-size:12.5px;color:var(--mut)}
+.edu .st{margin-top:6px}
+.ct{grid-column:span 6}
+.ct .g{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.ct .g>a,.ct .g>div{display:flex;gap:10px;align-items:center;padding:12px;border-radius:10px;background:var(--panel2);border:1px solid var(--line);font-size:13px;transition:.2s}
+.ct a:hover{border-color:var(--blue)}
+.ct small{display:block;font-size:10.5px;letter-spacing:.1em;text-transform:uppercase;color:var(--mut)}
+.ct b{font-weight:500;word-break:break-all}
+@media(max-width:1100px){.kpi{grid-column:span 6}.prof,.heat,.sk,.donut,.edu,.ct{grid-column:span 12}}
+@media(max-width:720px){.app{grid-template-columns:1fr}.rail{display:none}.kpi{grid-column:span 6}.content{padding:16px}.prof{flex-direction:column}.sk .g,.ct .g{grid-template-columns:1fr}.topbar{flex-wrap:wrap}.hr{grid-template-columns:36px repeat(12,1fr);gap:2px}td:nth-child(4){display:none}th:nth-child(4){display:none}}
+</style></head><body data-theme-id="dashboard">
+<div class="app">
+<aside class="rail">
+  <div class="lg">YS</div>
+  <a href="#overview">🏠<span>Overview</span></a><a href="#experience">💼<span>Experience</span></a><a href="#skills">📊<span>Skills</span></a><a href="#education">🎓<span>Education</span></a><a href="#contact">✉️<span>Contact</span></a>
+  <a class="dl" href="../../assets/files/Yash_Shrivastava_Resume.pdf" download="Yash_Shrivastava_Resume.pdf">⬇️<span>Download resume</span></a>
+</aside>
+<div>
+  <div class="topbar"><div class="path mono">yash.analyst / <b>overview</b></div><span class="chip ok">Available for BA roles</span><div class="sp"></div><a class="btn" href="mailto:yash9649833992@gmail.com">✉️ Email</a><a class="btn p" href="../../assets/files/Yash_Shrivastava_Resume.pdf" download="Yash_Shrivastava_Resume.pdf">⬇️ Resume PDF</a></div>
+  <div class="content" id="overview">
+    <div class="panel kpi rv"><div class="ph"><h3>Experience</h3><span class="e">⏳</span></div><div class="v"><span data-count="5">0</span>+ yrs</div><div class="l">Business analysis since Aug 2020</div><div class="tr">▲ currently employed</div></div>
+    <div class="panel kpi rv"><div class="ph"><h3>Companies</h3><span class="e">🏢</span></div><div class="v"><span data-count="3">0</span></div><div class="l">All in Jaipur, Rajasthan</div><div class="tr">▲ Smart SEO Tech (current)</div></div>
+    <div class="panel kpi rv"><div class="ph"><h3>Core skills</h3><span class="e">🧰</span></div><div class="v"><span data-count="12">0</span></div><div class="l">Requirements → UAT</div><div class="tr">▲ avg. strength 90%</div></div>
+    <div class="panel kpi rv"><div class="ph"><h3>Education</h3><span class="e">🎓</span></div><div class="v">MBA ✓</div><div class="l">RTU Kota · completed 2023</div><div class="tr">+ B.Tech 2020</div></div>
+
+    <div class="panel prof rv"><img src="../../assets/img/yash.jpg" alt="Yash Shrivastava"><div><h2>Yash Shrivastava</h2><div class="r">Business Analyst · Jaipur, Rajasthan, India</div><p>Business Analyst with about five years of experience working with software and digital teams in Jaipur. I turn business needs into clear requirements that developers can build from, and I stay involved until the work is tested and delivered. I am comfortable talking with clients, writing simple and accurate documents, and reading performance data to spot what needs to improve. I hold an MBA, which strengthens the business and management side of my analysis work.</p><div class="tags"><span>📝 Requirement Gathering</span><span>📄 Business Requirement Documents (BRD)</span><span>🧩 Functional Specifications</span><span>📖 User Stories</span><span>🗺️ Process Mapping</span><span>🔍 Gap Analysis</span></div></div></div>
+    <div class="panel heat rv"><div class="ph"><h3>Career activity</h3><span class="mono">2020 → 2025 · by month</span></div><div class="hr"><span>2020</span><i class="" title="2020-01"></i><i class="" title="2020-02"></i><i class="" title="2020-03"></i><i class="" title="2020-04"></i><i class="" title="2020-05"></i><i class="" title="2020-06"></i><i class="" title="2020-07"></i><i class="g" title="2020-08"></i><i class="g" title="2020-09"></i><i class="g" title="2020-10"></i><i class="g" title="2020-11"></i><i class="g" title="2020-12"></i></div><div class="hr"><span>2021</span><i class="g" title="2021-01"></i><i class="g" title="2021-02"></i><i class="g" title="2021-03"></i><i class="g" title="2021-04"></i><i class="g" title="2021-05"></i><i class="g" title="2021-06"></i><i class="g" title="2021-07"></i><i class="g" title="2021-08"></i><i class="g" title="2021-09"></i><i class="g m" title="2021-10"></i><i class="g m" title="2021-11"></i><i class="g m" title="2021-12"></i></div><div class="hr"><span>2022</span><i class="g m" title="2022-01"></i><i class="g m" title="2022-02"></i><i class="g m" title="2022-03"></i><i class="g m" title="2022-04"></i><i class="g m" title="2022-05"></i><i class="g m" title="2022-06"></i><i class="g m" title="2022-07"></i><i class="g m" title="2022-08"></i><i class="g m" title="2022-09"></i><i class="g m" title="2022-10"></i><i class="g m" title="2022-11"></i><i class=" m" title="2022-12"></i></div><div class="hr"><span>2023</span><i class=" m" title="2023-01"></i><i class=" m" title="2023-02"></i><i class=" m" title="2023-03"></i><i class=" m" title="2023-04"></i><i class=" m" title="2023-05"></i><i class=" m" title="2023-06"></i><i class="" title="2023-07"></i><i class="" title="2023-08"></i><i class="" title="2023-09"></i><i class="" title="2023-10"></i><i class="b" title="2023-11"></i><i class="b" title="2023-12"></i></div><div class="hr"><span>2024</span><i class="b" title="2024-01"></i><i class="b" title="2024-02"></i><i class="b" title="2024-03"></i><i class="b" title="2024-04"></i><i class="b" title="2024-05"></i><i class="b" title="2024-06"></i><i class="b" title="2024-07"></i><i class="b" title="2024-08"></i><i class="b" title="2024-09"></i><i class="b" title="2024-10"></i><i class="b" title="2024-11"></i><i class="b" title="2024-12"></i></div><div class="hr"><span>2025</span><i class="b" title="2025-01"></i><i class="b" title="2025-02"></i><i class="b" title="2025-03"></i><i class="b" title="2025-04"></i><i class="b" title="2025-05"></i><i class="b" title="2025-06"></i><i class="" title="2025-07"></i><i class="p" title="2025-08"></i><i class="p" title="2025-09"></i><i class="p" title="2025-10"></i><i class="p" title="2025-11"></i><i class="p" title="2025-12"></i></div><div class="lg"><span><i style="background:var(--green)"></i>Optisoft</span><span><i style="background:var(--blue)"></i>WDP Technologies</span><span><i style="background:var(--purple)"></i>Smart SEO Tech</span><span><i style="background:transparent;border:2px solid var(--amber)"></i>MBA</span></div></div>
+
+    <div class="panel exp rv" id="experience"><div class="ph"><h3>Experience log</h3><span class="mono">3 records</span></div>
+      <table><thead><tr><th>Period</th><th>Status</th><th>Role · Company</th><th>Highlights</th></tr></thead><tbody>
+      <tr><td><span class="mono">Aug 2025<br>→ Present</span></td><td><span class="st live">ACTIVE</span></td><td><b>🚀 Business Analyst</b><div class="co">Smart SEO Tech<br>Jaipur, Rajasthan</div></td><td><ul><li>Meet with stakeholders to understand what the business needs and write it down as clear, easy-to-follow requirements.</li><li>Work with the delivery team every day to answer questions, explain scope and keep tasks on track.</li><li>Study performance data and current work processes to find gaps and suggest practical improvements.</li><li>Prepare reports and status updates so that managers always know where a project stands.</li></ul></td></tr><tr><td><span class="mono">Nov 2023<br>→ Jun 2025</span></td><td><span class="st done">COMPLETED</span></td><td><b>🏢 Business Analyst</b><div class="co">WDP Technologies Pvt. Ltd.<br>Jaipur, Rajasthan</div></td><td><ul><li>Handled IT business analysis and performance analysis for client and internal projects.</li><li>Wrote requirement documents, user stories and process flows that developers and testers could use directly.</li><li>Acted as the link between clients and the technical team, so that changes and feedback were understood by both sides.</li><li>Supported testing and user acceptance (UAT) to confirm the final solution matched what the client asked for.</li></ul></td></tr><tr><td><span class="mono">Aug 2020<br>→ Nov 2022</span></td><td><span class="st done">COMPLETED</span></td><td><b>🌱 Business Analyst</b><div class="co">Optisoft Business Solutions Pvt. Ltd.<br>Jaipur, Rajasthan</div></td><td><ul><li>Started my career here, learning how software projects move from an idea to a working product.</li><li>Collected requirements from users and turned them into documents for the development team.</li><li>Studied existing business processes and pointed out steps that could be simplified.</li><li>Worked with team members from different departments and kept documentation up to date.</li></ul></td></tr>
+      </tbody></table></div>
+
+    <div class="panel sk rv" id="skills"><div class="ph"><h3>Skill levels</h3><span class="mono">self-assessed</span></div><div class="g"><div class="bar"><span>📝 Requirement Gathering</span><i style="--w:95%"></i><b>95%</b></div><div class="bar"><span>📄 Business Requirement Documents (BRD)</span><i style="--w:92%"></i><b>92%</b></div><div class="bar"><span>🧩 Functional Specifications</span><i style="--w:90%"></i><b>90%</b></div><div class="bar"><span>📖 User Stories</span><i style="--w:92%"></i><b>92%</b></div><div class="bar"><span>🗺️ Process Mapping</span><i style="--w:88%"></i><b>88%</b></div><div class="bar"><span>🔍 Gap Analysis</span><i style="--w:88%"></i><b>88%</b></div><div class="bar"><span>📈 Performance Analysis</span><i style="--w:86%"></i><b>86%</b></div><div class="bar"><span>🤝 Stakeholder Communication</span><i style="--w:93%"></i><b>93%</b></div><div class="bar"><span>✅ User Acceptance Testing (UAT)</span><i style="--w:88%"></i><b>88%</b></div><div class="bar"><span>🗂️ Project Coordination</span><i style="--w:87%"></i><b>87%</b></div><div class="bar"><span>📚 Documentation</span><i style="--w:94%"></i><b>94%</b></div><div class="bar"><span>💡 Problem Solving</span><i style="--w:90%"></i><b>90%</b></div></div></div>
+    <div class="panel donut rv"><svg viewBox="0 0 120 120"><circle cx="60" cy="60" r="46" stroke="#1a2447"/><circle cx="60" cy="60" r="46" stroke="var(--blue)" stroke-dasharray="101 289"/><circle cx="60" cy="60" r="46" stroke="var(--green)" stroke-dasharray="72 289" stroke-dashoffset="-101"/><circle cx="60" cy="60" r="46" stroke="var(--purple)" stroke-dasharray="58 289" stroke-dashoffset="-173"/><circle cx="60" cy="60" r="46" stroke="var(--amber)" stroke-dasharray="58 289" stroke-dashoffset="-231"/></svg><div><div class="ph"><h3>Weekly focus</h3></div><ul><li><i style="background:var(--blue)"></i>Requirements &amp; docs<b>35%</b></li><li><i style="background:var(--green)"></i>Stakeholder meetings<b>25%</b></li><li><i style="background:var(--purple)"></i>Data &amp; process analysis<b>20%</b></li><li><i style="background:var(--amber)"></i>UAT &amp; delivery<b>20%</b></li></ul></div></div>
+
+    <div class="panel edu rv" id="education"><div class="ph"><h3>Education</h3><span class="mono">2 records</span></div><div><span class="e">🎓</span><div><b>Master of Business Administration (MBA)</b><span>Rajasthan Technical University, Kota</span><br><span class="st live">Oct 2021 – 2023 · COMPLETED</span></div></div><div><span class="e">🛠️</span><div><b>Bachelor of Technology (B.Tech)</b><span>Rajasthan Technical University, Kota</span><br><span class="st done">Graduated Jan 2020</span></div></div></div>
+    <div class="panel ct rv" id="contact"><div class="ph"><h3>Quick actions</h3><span class="mono">replies within 24h</span></div><div class="g"><a href="mailto:yash9649833992@gmail.com">✉️<div><small>Email</small><b>yash9649833992@gmail.com</b></div></a><a href="tel:+919649833992">📞<div><small>Phone</small><b>+91 9649833992</b></div></a><a href="https://www.linkedin.com/in/yash-shrivastava-2aa1141a4" target="_blank" rel="noopener">💼<div><small>LinkedIn</small><b>yash-shrivastava-2aa1141a4</b></div></a><div>📍<div><small>Location</small><b>Jaipur, Rajasthan, India</b></div></div></div></div>
+  </div>
+</div>
+</div><style>.tsw{position:fixed;right:18px;bottom:18px;z-index:9999;font-family:Inter,system-ui,sans-serif}.tsw>button{display:flex;align-items:center;gap:8px;padding:10px 16px;border-radius:999px;border:0;background:#111;color:#fff;font-weight:600;font-size:13.5px;cursor:pointer;box-shadow:0 10px 30px rgba(0,0,0,.3)}.tsw .m{position:absolute;right:0;bottom:50px;background:#fff;color:#111;border-radius:14px;padding:8px;min-width:200px;box-shadow:0 16px 40px rgba(0,0,0,.25);display:none}.tsw.open .m{display:block}.tsw .m a{display:flex;align-items:center;gap:10px;padding:10px 12px;border-radius:10px;font-size:14px;font-weight:600;color:#111;text-decoration:none}.tsw .m a:hover{background:#f0f0f0}.tsw .m a.on{background:#111;color:#fff}.tsw .m small{display:block;font-weight:400;font-size:11.5px;color:#777}.tsw .m a.on small{color:#bbb}</style><div class="tsw" id="tsw"><button type="button" aria-label="Switch theme">🎨 Theme</button><div class="m"><a data-t="classic" href="../../"><span>🗂️</span><span>Classic CV<small>sidebar layout</small></span></a><a data-t="editorial" href="../../themes/editorial/"><span>📰</span><span>Editorial<small>magazine layout</small></span></a><a data-t="dashboard" href="../../themes/dashboard/"><span>📊</span><span>Dashboard<small>analytics layout</small></span></a></div></div><script>(function(){var w=document.getElementById('tsw'),cur=document.body.getAttribute('data-theme-id');w.querySelector('button').addEventListener('click',function(){w.classList.toggle('open')});document.addEventListener('click',function(e){if(!w.contains(e.target))w.classList.remove('open')});w.querySelectorAll('a').forEach(function(a){if(a.dataset.t===cur)a.classList.add('on');a.addEventListener('click',function(){try{localStorage.setItem('yash-theme',a.dataset.t)}catch(e){}})});})();</script><script src="https://cdn.jsdelivr.net/npm/@twemoji/api@15.1.0/dist/twemoji.min.js" crossorigin="anonymous"></script><script>try{twemoji.parse(document.body,{folder:'svg',ext:'.svg',base:'https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/'})}catch(e){}</script><script>(function(){var els=document.querySelectorAll('.rv');if(!('IntersectionObserver' in window)){els.forEach(function(e){e.classList.add('on')});return}var io=new IntersectionObserver(function(en){en.forEach(function(e){if(e.isIntersecting){e.target.classList.add('on');io.unobserve(e.target)}})},{threshold:.12});els.forEach(function(e){io.observe(e)});document.querySelectorAll('[data-count]').forEach(function(b){var end=+b.dataset.count,t0=null;function st(t){if(!t0)t0=t;var k=Math.min(1,(t-t0)/1200);b.textContent=Math.round(end*(1-Math.pow(1-k,3)));if(k<1)requestAnimationFrame(st)}var o=new IntersectionObserver(function(en){if(en[0].isIntersecting){requestAnimationFrame(st);o.disconnect()}});o.observe(b)});})();</script></body></html>

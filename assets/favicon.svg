@@ -1,1 +1,6 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64"><defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#7c6cff"/><stop offset="1" stop-color="#22d3ee"/></linearGradient></defs><rect width="64" height="64" rx="16" fill="url(#g)"/><text x="32" y="42" font-family="Sora,Inter,Arial,sans-serif" font-size="28" font-weight="800" fill="#0b0e17" text-anchor="middle">YS</text></svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <rect width="64" height="64" rx="15" fill="#1f2a24"/>
+  <circle cx="47" cy="17" r="7" fill="#c8553d"/>
+  <text x="31" y="45" font-family="Georgia,'Times New Roman',serif" font-size="30" font-weight="700" fill="#f4f1ea" text-anchor="middle" letter-spacing="-1">YS</text>
+  <rect x="14" y="51" width="36" height="3" rx="1.5" fill="#c8553d"/>
+</svg>
